@@ -1,4 +1,50 @@
 function Dinner() {
+    const dinners = [
+        {
+            "id": 1,
+            "title": "MAECENAS TRISTIQUE",
+            "content": "Aenean pharetra tortor dui in pellentesque",
+            "price": "29.79",
+            "image": "images/dinner-01.jpg"
+        },
+        {
+            "id": 2,
+            "title": "CRAS MAXIMUS",
+            "content": "Aenean condimentum ante erat",
+            "price": "45.09",
+            "image": "images/dinner-02.jpg"
+        },
+        {
+            "id": 3,
+            "title": "PINE NUT SBRISALONA",
+            "content": "Proin lacinia nisl ut ultricies posuere nulla",
+            "price": "12.75",
+            "image": "images/dinner-03.jpg"
+        },
+        {
+            "id": 4,
+            "title": "PINE NUT SBRISALONA",
+            "content": "Proin lacinia nisl ut ultricies posuere nulla",
+            "price": "429.79",
+            "image": "images/dinner-04.jpg"
+        },
+        {
+            "id": 5,
+            "title": "SUSPENDISSE EU",
+            "content": "Sed fermentum eros vitae eros",
+            "price": "45.09",
+            "image": "images/dinner-05.jpg"
+        },
+        {
+            "id": 6,
+            "title": "TEMPOR MALESUADA",
+            "content": "Duis massa nibh porttitor nec imperdiet eget",
+            "price": "12.75",
+            "image": "images/dinner-06.jpg"
+        }
+    ];
+
+
     return(
         <>
             {/* Dinner */}
@@ -13,108 +59,29 @@ function Dinner() {
                 </div>
                 <div className="container">
                     <div className="row p-t-108 p-b-70">
+                        {dinners.length > 0 && dinners.map((value, index) => (
                         <div className="col-md-8 col-lg-6 m-l-r-auto">
-                            {/* Block3 */}
+
+
                             <div className="blo3 flex-w flex-col-l-sm m-b-30">
                                 <div className="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
                                     <a href="#">
-                                        <img src="images/dinner-01.jpg" alt="IMG-MENU" />
+                                        <img src={value.image} alt="IMG-MENU" />
                                     </a>
                                 </div>
                                 <div className="text-blo3 size21 flex-col-l-m">
                                     <a href="#" className="txt21 m-b-3">
-                                        Maecenas tristique
+                                        {value.title}
                                     </a>
                                     <span className="txt23">
-                Aenean pharetra tortor dui in pellentesque
+                {value.content}
               </span>
-                                    <span className="txt22 m-t-20">$29.79</span>
+                                    <span className="txt22 m-t-20">${value.price}</span>
                                 </div>
                             </div>
-                            {/* Block3 */}
-                            <div className="blo3 flex-w flex-col-l-sm m-b-30">
-                                <div className="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-                                    <a href="#">
-                                        <img src="images/dinner-03.jpg" alt="IMG-MENU" />
-                                    </a>
-                                </div>
-                                <div className="text-blo3 size21 flex-col-l-m">
-                                    <a href="#" className="txt21 m-b-3">
-                                        Pine nut sbrisalona
-                                    </a>
-                                    <span className="txt23">Aenean condimentum ante erat</span>
-                                    <span className="txt22 m-t-20">$45.09</span>
-                                </div>
-                            </div>
-                            {/* Block3 */}
-                            <div className="blo3 flex-w flex-col-l-sm m-b-30">
-                                <div className="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-                                    <a href="#">
-                                        <img src="images/dinner-05.jpg" alt="IMG-MENU" />
-                                    </a>
-                                </div>
-                                <div className="text-blo3 size21 flex-col-l-m">
-                                    <a href="#" className="txt21 m-b-3">
-                                        Suspendisse eu
-                                    </a>
-                                    <span className="txt23">
-                Proin lacinia nisl ut ultricies posuere nulla
-              </span>
-                                    <span className="txt22 m-t-20">$12.75</span>
-                                </div>
-                            </div>
+
                         </div>
-                        <div className="col-md-8 col-lg-6 m-l-r-auto">
-                            {/* Block3 */}
-                            <div className="blo3 flex-w flex-col-l-sm m-b-30">
-                                <div className="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-                                    <a href="#">
-                                        <img src="images/dinner-02.jpg" alt="IMG-MENU" />
-                                    </a>
-                                </div>
-                                <div className="text-blo3 size21 flex-col-l-m">
-                                    <a href="#" className="txt21 m-b-3">
-                                        Cras maximus
-                                    </a>
-                                    <span className="txt23">
-                Proin lacinia nisl ut ultricies posuere nulla
-              </span>
-                                    <span className="txt22 m-t-20">$29.79</span>
-                                </div>
-                            </div>
-                            {/* Block3 */}
-                            <div className="blo3 flex-w flex-col-l-sm m-b-30">
-                                <div className="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-                                    <a href="#">
-                                        <img src="images/dinner-04.jpg" alt="IMG-MENU" />
-                                    </a>
-                                </div>
-                                <div className="text-blo3 size21 flex-col-l-m">
-                                    <a href="#" className="txt21 m-b-3">
-                                        Pine nut sbrisalona
-                                    </a>
-                                    <span className="txt23">Sed fermentum eros vitae eros</span>
-                                    <span className="txt22 m-t-20">$45.09</span>
-                                </div>
-                            </div>
-                            {/* Block3 */}
-                            <div className="blo3 flex-w flex-col-l-sm m-b-30">
-                                <div className="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-                                    <a href="#">
-                                        <img src="images/dinner-06.jpg" alt="IMG-MENU" />
-                                    </a>
-                                </div>
-                                <div className="text-blo3 size21 flex-col-l-m">
-                                    <a href="#" className="txt21 m-b-3">
-                                        Tempor malesuada
-                                    </a>
-                                    <span className="txt23">
-                Duis massa nibh porttitor nec imperdiet eget
-              </span>
-                                    <span className="txt22 m-t-20">$12.75</span>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </section>
