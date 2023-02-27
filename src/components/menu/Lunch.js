@@ -62,7 +62,7 @@ function Lunch(props) {
                 <div className="container">
                     <div className="row p-t-108 p-b-70">
                         {lunches.length > 0 && lunches.map((value, index) => (
-                            <div className="col-md-8 col-lg-6 m-l-r-auto">
+                            <div className="col-md-8 col-lg-6 m-l-r-auto" key={index}>
 
                                 <div className="blo3 flex-w flex-col-l-sm m-b-30">
                                     <div className="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">

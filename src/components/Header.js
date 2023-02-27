@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Header() {
     return(
         <>
@@ -9,36 +11,36 @@ function Header() {
                         <div className="wrap_header trans-0-3">
                             {/* Logo */}
                             <div className="logo">
-                                <a href="/">
+                                <Link href="/">
                                     <img
                                         src="images/icons/logo.png"
                                         alt="IMG-LOGO"
                                         data-logofixed="images/icons/logo2.png"
                                     />
-                                </a>
+                                </Link>
                             </div>
                             {/* Menu */}
                             <div className="wrap_menu p-l-45 p-l-0-xl">
                                 <nav className="menu">
                                     <ul className="main_menu">
                                         <li>
-                                            <a href="/">Home</a>
+                                            <Link href="/">Home</Link>
                                         </li>
                                         <li>
-                                            <a href="/menu">Menu</a>
+                                            <Link href="/menu">Menu</Link>
                                         </li>
                                         <li>
-                                            <a href="/reservation">Reservation</a>
+                                            <Link href="/reservation">Reservation</Link>
                                         </li>
                                         <li>
-                                            <a href="/gallery">Gallery</a>
+                                            <Link href="/gallery">Gallery</Link>
                                         </li>
                                         <li>
-                                            <a href="/about">About</a>
+                                            <Link href="/about">About</Link>
                                         </li>
 
                                         <li>
-                                            <a href="/contact">Contact</a>
+                                            <Link href="/contact">Contact</Link>
                                         </li>
                                     </ul>
                                 </nav>

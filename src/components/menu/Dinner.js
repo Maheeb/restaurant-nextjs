@@ -60,7 +60,7 @@ function Dinner() {
                 <div className="container">
                     <div className="row p-t-108 p-b-70">
                         {dinners.length > 0 && dinners.map((value, index) => (
-                        <div className="col-md-8 col-lg-6 m-l-r-auto">
+                        <div className="col-md-8 col-lg-6 m-l-r-auto" key={index}>
 
 
                             <div className="blo3 flex-w flex-col-l-sm m-b-30">
