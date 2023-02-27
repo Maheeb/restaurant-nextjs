@@ -65,7 +65,7 @@ function Album() {
 
     const albumArray = Object.values(albums).flatMap(array => array.map(({id, image}) => ({id, image})));
 
-    // console.log(albumArray);
+
     const [type, setUpdateType] = useState('all');
     const [items, setItems] = useState(albumArray);
     const [active, setActive] = useState('is-actived');
