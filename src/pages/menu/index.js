@@ -17,7 +17,7 @@ return(
        <Menus/>
         <Lunch/>
         <Dinner/>
-        <SignUp/>
+        {/*<SignUp/>*/}
     </>
 
 )

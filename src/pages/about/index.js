@@ -15,7 +15,7 @@ function About() {
 
             <Story/>
             <Chef/>
-            <SignUp/>
+            {/*<SignUp/>*/}
         </>
 
     )

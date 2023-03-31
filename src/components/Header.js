@@ -47,13 +47,11 @@ function Header() {
                             </div>
                             {/* Social */}
                             <div className="social flex-w flex-l-m p-r-20">
-                                <a href="#">
-                                    <i className="fa fa-tripadvisor" aria-hidden="true" />
-                                </a>
-                                <a href="#">
+
+                                <a href="https://www.facebook.com/login/">
                                     <i className="fa fa-facebook m-l-21" aria-hidden="true" />
                                 </a>
-                                <a href="#">
+                                <a href="https://twitter.com/?lang=en">
                                     <i className="fa fa-twitter m-l-21" aria-hidden="true" />
                                 </a>
                                 <button className="btn-show-sidebar m-l-33 trans-0-4" />
@@ -70,43 +68,39 @@ function Header() {
                     {/* - */}
                     <ul className="menu-sidebar p-t-95 p-b-70">
                         <li className="t-center m-b-13">
-                            <a href="/" className="txt19">
+                            <Link href="/" className="txt19">
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li className="t-center m-b-13">
-                            <a href="menu.html" className="txt19">
+                            <Link href="/menu" className="txt19">
                                 Menu
-                            </a>
+                            </Link>
                         </li>
                         <li className="t-center m-b-13">
-                            <a href="gallery.html" className="txt19">
+                            <Link href="/gallery" className="txt19">
                                 Gallery
-                            </a>
+                            </Link>
                         </li>
                         <li className="t-center m-b-13">
-                            <a href="about.html" className="txt19">
+                            <Link href="/about" className="txt19">
                                 About
-                            </a>
+                            </Link>
                         </li>
-                        <li className="t-center m-b-13">
-                            <a href="blog.html" className="txt19">
-                                Blog
-                            </a>
-                        </li>
+
                         <li className="t-center m-b-33">
-                            <a href="contact.html" className="txt19">
+                            <Link href="/contact" className="txt19">
                                 Contact
-                            </a>
+                            </Link>
                         </li>
                         <li className="t-center">
                             {/* Button3 */}
-                            <a
-                                href="reservation.html"
+                            <Link
+                                href="/reservation"
                                 className="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto"
                             >
                                 Reservation
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     {/* - */}

@@ -45,15 +45,11 @@ return(
             <span className="fs-13 color2 m-r-5">
               <i className="fa fa-twitter" aria-hidden="true" />
             </span>
-                            <a href="#" className="txt15">
-                                @colorlib
-                            </a>
+
                             <p className="txt14 m-b-18">
                                 Activello is a good option. It has a slider built into that
                                 displays the featured image in the slider.
-                                <a href="#" className="txt15">
-                                    https://buff.ly/2zaSfAQ
-                                </a>
+
                             </p>
                             <span className="txt16">21 Dec 2017</span>
                         </div>
@@ -61,15 +57,11 @@ return(
             <span className="fs-13 color2 m-r-5">
               <i className="fa fa-twitter" aria-hidden="true" />
             </span>
-                            <a href="#" className="txt15">
-                                @colorlib
-                            </a>
+
                             <p className="txt14 m-b-18">
                                 Activello is a good option. It has a slider built into that
                                 displays
-                                <a href="#" className="txt15">
-                                    https://buff.ly/2zaSfAQ
-                                </a>
+
                             </p>
                             <span className="txt16">21 Dec 2017</span>
                         </div>
@@ -167,30 +159,7 @@ return(
                     </div>
                 </div>
             </div>
-            <div className="end-footer bg2">
-                <div className="container">
-                    <div className="flex-sb-m flex-w p-t-22 p-b-22">
-                        <div className="p-t-5 p-b-5">
-                            <a href="#" className="fs-15 c-white">
-                                <i className="fa fa-tripadvisor" aria-hidden="true" />
-                            </a>
-                            <a href="#" className="fs-15 c-white">
-                                <i className="fa fa-facebook m-l-18" aria-hidden="true" />
-                            </a>
-                            <a href="#" className="fs-15 c-white">
-                                <i className="fa fa-twitter m-l-18" aria-hidden="true" />
-                            </a>
-                        </div>
-                        <div className="txt17 p-r-20 p-t-5 p-b-5">
-                            Copyright © 2018 All rights reserved | This template is made with{" "}
-                            <i className="fa fa-heart" /> by{" "}
-                            <a href="https://colorlib.com" target="_blank">
-                                Colorlib
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </footer>
         {/* Back to top */}
         <div className="btn-back-to-top bg0-hov" id="myBtn">

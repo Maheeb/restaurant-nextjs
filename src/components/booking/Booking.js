@@ -1,4 +1,70 @@
+import Swal from "sweetalert2";
+import {useState} from "react";
+
 function Booking() {
+    const [name, setInput1] = useState("");
+    const [phone, setPhone] = useState("");
+    const [email, setInput2] = useState("");
+
+    const [errors, setErrors] = useState({
+        name: "",
+        phone: "",
+        email: "",
+
+    });
+
+    const handleChange = event => {
+        if (event.target.name === "name") {
+            setInput1(event.target.value);
+        }
+        if (event.target.name === "phone") {
+            setPhone(event.target.value);
+        }
+        if (event.target.name === "email") {
+            setInput2(event.target.value);
+        }
+
+
+
+    };
+    const validate = () => {
+        let errors = {};
+        let formIsValid = true;
+
+        if (!name) {
+            formIsValid = false;
+            errors["name"] = "Cannot be empty";
+        }
+        if (!email) {
+            formIsValid = false;
+            errors["email"] = "Cannot be empty";
+        }
+        if (!phone) {
+            formIsValid = false;
+            errors["phone"] = "Cannot be empty";
+        }
+
+
+        setErrors(errors);
+        return formIsValid;
+    };
+    const handleSubmit = event => {
+        event.preventDefault();
+
+        if (validate()) {
+            Swal.fire({
+                position: '',
+                icon: 'success',
+                title: 'Congrats, You have placed your booking. We will get back to you !!',
+                showConfirmButton: false,
+                timer: 20000
+            });
+
+            // dispatch(clearCart({type:'yes'}));
+            // save the data
+            location.reload()
+        }
+    };
     return(
         <>
             {/* Reservation */}
@@ -10,59 +76,55 @@ function Booking() {
                                 <span className="tit2 t-center">Reservation</span>
                                 <h3 className="tit3 t-center m-b-35 m-t-2">Book table</h3>
                             </div>
-                            <form className="wrap-form-reservation size22 m-l-r-auto">
-                                <div className="row">
-                                    <div className="col-md-4">
-                                        {/* Date */}
-                                        <span className="txt9">Date</span>
+                            <form className="wrap-form-reservation size22 m-l-r-auto" onSubmit={handleSubmit}>
 
-                                    </div>
-                                    <div className="col-md-4">
-                                        {/* Time */}
-                                        <span className="txt9">Time</span>
-
-                                    </div>
-                                    <div className="col-md-4">
-                                        {/* People */}
-                                        <span className="txt9">People</span>
-
-                                    </div>
-                                </div>
                                 <div className="row">
                                     <div className="col-md-4">
                                         {/* Name */}
-                                        <span className="txt9">Name</span>
+                                        <span className="txt9">Name*</span>
                                         <div className="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
                                             <input
                                                 className="bo-rad-10 sizefull txt10 p-l-20"
                                                 type="text"
                                                 name="name"
                                                 placeholder="Name"
+                                                value={name}
+                                                onChange={handleChange}
                                             />
+                                            {errors.name && <p style={{color:'red'}}>{errors.name}</p>}
+
                                         </div>
                                     </div>
                                     <div className="col-md-4">
                                         {/* Phone */}
-                                        <span className="txt9">Phone</span>
+                                        <span className="txt9">Phone*</span>
                                         <div className="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
                                             <input
                                                 className="bo-rad-10 sizefull txt10 p-l-20"
                                                 type="text"
                                                 name="phone"
                                                 placeholder="Phone"
+                                                value={phone}
+                                                onChange={handleChange}
                                             />
+                                            {errors.phone && <p style={{color:'red'}}>{errors.phone}</p>}
+
                                         </div>
                                     </div>
                                     <div className="col-md-4">
                                         {/* Email */}
-                                        <span className="txt9">Email</span>
+                                        <span className="txt9">Email*</span>
                                         <div className="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
                                             <input
                                                 className="bo-rad-10 sizefull txt10 p-l-20"
                                                 type="text"
                                                 name="email"
                                                 placeholder="Email"
+                                                value={email}
+                                                onChange={handleChange}
                                             />
+                                            {errors.email && <p style={{color:'red'}}>{errors.email}</p>}
+
                                         </div>
                                     </div>
                                 </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Welcome() {
     return(
         <>
@@ -14,10 +16,10 @@ function Welcome() {
                                     Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi,
                                     ac facilisis ligula sem id neque.
                                 </p>
-                                <a href="about.html" className="txt4">
+                                <Link href="/about" className="txt4">
                                     Our Story
                                     <i className="fa fa-long-arrow-right m-l-10" aria-hidden="true" />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-md-6 p-b-30">
@@ -58,13 +60,7 @@ function Welcome() {
                                             Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
                                             eros.
                                         </p>
-                                        <a href="#" className="txt4">
-                                            Learn More
-                                            <i
-                                                className="fa fa-long-arrow-right m-l-10"
-                                                aria-hidden="true"
-                                            />
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -86,13 +82,7 @@ function Welcome() {
                                             Aliquam eget aliquam magna, quis posuere risus ac justo ipsum
                                             nibh urna
                                         </p>
-                                        <a href="#" className="txt4">
-                                            Learn More
-                                            <i
-                                                className="fa fa-long-arrow-right m-l-10"
-                                                aria-hidden="true"
-                                            />
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -114,13 +104,7 @@ function Welcome() {
                                             Sed ornare ligula eget tortor tempor, quis porta tellus
                                             dictum.
                                         </p>
-                                        <a href="#" className="txt4">
-                                            Learn More
-                                            <i
-                                                className="fa fa-long-arrow-right m-l-10"
-                                                aria-hidden="true"
-                                            />
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>

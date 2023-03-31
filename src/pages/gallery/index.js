@@ -13,7 +13,7 @@ function Gallery() {
             </section>
 
             <Album/>
-            <SignUp/>
+            {/*<SignUp/>*/}
         </>
 
     )
